@@ -20,7 +20,7 @@
 	},
 	"scripts": {
 		"database": "./scripts/fixture.sh",
-		"start": "php -S localhost:8080 -t ."
+		"start": "php -S localhost:8080 -t public"
 	},
 	"config": {
 		"process-timeout":0

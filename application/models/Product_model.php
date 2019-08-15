@@ -19,10 +19,10 @@ SQL
 			->join('section s', 's.id = p.section_id')
 			->join('price pr', 'pr.product_id = p.id')
 			->group_by('p.id');
-		return self::mapProduct($this->db->get()->result_array());
+		return self::mapProducts($this->db->get()->result_array());
 	}
 
-	private static function mapProduct(array $products): array
+	private static function mapProducts(array $products): array
 	{
 		return array_map(
 			static function ($product) {
